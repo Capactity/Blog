@@ -11,6 +11,10 @@
 
 ### 算法
 
-
-
+## 可视化基础
+### canvas
 [Canvas_API](https://github.com/Capactity/blog/blob/master/Canvas_API.md)
+### d3
+### 可视化问题汇总
+[局部渲染实现方案]
+[性能优化注意点]
