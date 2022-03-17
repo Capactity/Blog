@@ -8,8 +8,10 @@
 ## 数据结构&算法
 ### 数据结构
 [数组](https://github.com/Capactity/blog/blob/master/data-structure/数组.md)
+
 [链表](https://github.com/Capactity/blog/blob/master/data-structure/链表.md)
 
+[哈希表](https://github.com/Capactity/blog/blob/master/data-structure/哈希表.md)
 ### 算法
 
 ## 可视化基础
