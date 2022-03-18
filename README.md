@@ -12,6 +12,8 @@
 [链表](https://github.com/Capactity/blog/blob/master/data-structure/链表.md)
 
 [哈希表](https://github.com/Capactity/blog/blob/master/data-structure/哈希表.md)
+
+[二叉树](https://github.com/Capactity/blog/blob/master/data-structure/二叉树.md)
 ### 算法
 
 ## 可视化基础
