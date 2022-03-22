@@ -14,6 +14,13 @@
 [哈希表](https://github.com/Capactity/blog/blob/master/data-structure/哈希表.md)
 
 [二叉树](https://github.com/Capactity/blog/blob/master/data-structure/二叉树.md)
+
+[栈](https://github.com/Capactity/blog/blob/master/data-structure/栈.md)
+
+[队列](https://github.com/Capactity/blog/blob/master/data-structure/队列.md)
+
+[堆](https://github.com/Capactity/blog/blob/master/data-structure/堆.md)
+
 ### 算法
 
 ## 可视化基础
