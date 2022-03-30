@@ -39,6 +39,7 @@
 
 [数组](https://github.com/Capactity/blog/blob/master/algorithm/array/array.md)
 
+
 [链表]
 
 [哈希表]
