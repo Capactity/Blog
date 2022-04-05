@@ -5,8 +5,9 @@
 - JavaScript常用的设计模式
 - JavaScript原型与原型链的理解
 - JavaScript抽象语法树AST
-- JavaScript混淆安全加固
+- EventLoop设计原理
 - 手写Promise
+- JavaScript混淆安全加固
 
 
 
