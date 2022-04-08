@@ -8,8 +8,6 @@
 
 `constructor`：原型对象上的一个属性，它指向对象的构造函数。
 
-
-
 通过示例验证其中的关系：
 
 ````typescript
@@ -19,7 +17,7 @@ function Pig(name) {
 var peppa = new Pig('peppa');
 ````
 
-
+<img src="../img/构造函数.png" alt="构造函数"  />
 
 用`new`关键字实例化一个Pig对象，返回一个普通对象pie示例，在实例化的时候，Pig的prototype上的属性会作为原型对象赋值给实例。也就是说peppa的原型，是从Pig的prototype引用来的，即`peppa.__proto__ === Pig.prototype`;
 
@@ -37,3 +35,6 @@ Pig.__proto__ === Function.prototype;
 // true
 ````
 
+
+
+gouh
