@@ -3,7 +3,7 @@
 ## JavaScript 相关
 
 - [JavaScript常用的设计模式](https://github.com/Capactity/blog/blob/master/javascript/JavaScript常用的设计模式.md)
-- JavaScript原型与原型链的理解
+- [JavaScript原型与原型链的理解](https://github.com/Capactity/blog/blob/master/javascript/JavaScript原型与原型链的理解.md)
 - JavaScript抽象语法树AST
 - EventLoop设计原理
 - 手写Promise
