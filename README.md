@@ -4,12 +4,12 @@
 
 - [JavaScript常用的设计模式](https://github.com/Capactity/blog/blob/master/javascript/JavaScript常用的设计模式.md)
 - [JavaScript原型与原型链的理解](https://github.com/Capactity/blog/blob/master/javascript/JavaScript原型与原型链的理解.md)
-- JavaScript抽象语法树AST
-- EventLoop设计原理
+- [EventLoop设计原理](https://github.com/Capactity/blog/blob/master/javascript/EventLoop设计原理.md)
 - 手写Promise
 - JavaScript混淆安全加固
+- JavaScript抽象语法树AST
 
-
+ 
 
 ## 网络通信
 
