@@ -52,7 +52,9 @@ setTimeout2
 
 ## Node中的Event Loop
 
+> Node采用v8作为js的解析引擎，`I/0`处理使用`libuv`，`libuv`库负责Node API的执行。将不同的任务分配给不同的线程，形成一个Event Loop，以异步的方式将任务的执行结果返回给V8引擎。
 
+[^libuv]: 基于事件驱动的跨平台抽象层，封装不同操作系统的底层特性，对外提供统一的API，包含事件循环机制
 
 
 
