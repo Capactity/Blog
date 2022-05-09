@@ -2,16 +2,30 @@
 
 ## JavaScript 相关
 
-- [JavaScript常用的设计模式](https://github.com/Capactity/blog/blob/master/javascript/JavaScript常用的设计模式.md)
-- [JavaScript原型与原型链的理解](https://github.com/Capactity/blog/blob/master/javascript/JavaScript原型与原型链的理解.md)
-- [EventLoop设计原理](https://github.com/Capactity/blog/blob/master/javascript/EventLoop设计原理.md)
-- [Promise实现](https://github.com/Capactity/Blog/blob/main/javascript/Pormise.md)
-- JavaScript混淆安全加固
-- JavaScript抽象语法树AST
+- [JavaScript 常用的设计模式](https://github.com/Capactity/blog/blob/master/javascript/JavaScript常用的设计模式.md)
+- [JavaScript 原型与原型链的理解](https://github.com/Capactity/blog/blob/master/javascript/JavaScript原型与原型链的理解.md)
+- [EventLoop 设计原理](https://github.com/Capactity/blog/blob/master/javascript/EventLoop设计原理.md)
+- [Promise 实现](https://github.com/Capactity/Blog/blob/main/javascript/Pormise.md)
+- async/await 实现
+- JavaScript 混淆安全加固
+- JavaScript 抽象语法树 AST
 
  
 
-## 网络通信
+## 计算机网络
+
+- 从输入url到页面显示的全过程
+- https相关
+- websocket协议详解 
+
+
+## 浏览器
+
+- 页面渲染卡顿原因/内存泄漏
+- CSRF攻击/XSS攻击
+
+
+
 
 
 
@@ -54,6 +68,9 @@
 - [二叉树]
 
 
+## 前端综合
+
+- [浏览器工作原理]
 
 
 ## 可视化基础
