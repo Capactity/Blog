@@ -4,6 +4,10 @@
 
 
 
+
+
+
+
 ## 策略模式
 
 **概念：** 定义一系列的算法，把它们一个个封装起来，并且使它们可以互相转换。
@@ -90,6 +94,10 @@ var validataFunc = function(){
 
 
 
+
+
+
+
 ## 观察者模式（发布-订阅模式 ）
 
 **概念：** 一种消息范式，定义对象间的一种一对多的依赖关系，当一个对象的状态发生改变时，所有依赖于它的对象都将得到通知。
@@ -171,6 +179,10 @@ emitter.emit('test', 'augument3', 'argument4')
 
 
 
+
+
+
+
 ## 单例模式
 
 **概念：** 一个类仅有一个实例，并提供一个访问它的全局访问方式。实现时先判断是否有实现的实例，如果没有则创建一个实例再返回，确保一个类只有一个实例。
@@ -214,6 +226,10 @@ const a = Singleton.getInstance('sven1')
 const b = Singleton.getInstance('sven2')
 console.log(a === b) // true
 ````
+
+
+
+
 
 
 
@@ -263,6 +279,10 @@ var proxyImage = (function() {
 
 proxyImage.setSrc('http://imgcache.qq.com/music/photo/k/000GGDys0yA0Nk.jpg')
 ````
+
+
+
+
 
 
 
