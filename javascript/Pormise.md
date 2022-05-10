@@ -163,6 +163,26 @@ function doResolve() {
     onRejected(ex);
   }
 }
+
+// 解析Promise
+function Promise(fn) {
+  ...
+  doResolve(fn, resolve, reject);
+}
+````
+
+
+
+#### 实现then方法
+
+首先实现一个执行方法done,该方法用来处理执行then方法的回调函数，promise.done(onFulfilled, onRejected)方法需要注意：
+
+- onFulfilled和onRejected两者只能有一个被执行，且执行次数为一次。
+- 该方法仅能被调用一次，一旦调用该方法，则promise链式调用结束。
+- 无论promise是否被解析，该方法都可以被调用。
+
+````typescript
+
 ````
 
 
