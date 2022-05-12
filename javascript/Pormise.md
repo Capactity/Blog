@@ -252,3 +252,4 @@ function Promise(fn){
 
 
 以上为promise基本实现原理。
+
