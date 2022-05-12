@@ -17,20 +17,6 @@
 
 
 
-
-
-## 实现
-
-由于Promise为状态机，我们需先定义状态
-
-````typescript
-const PENDING = 0; // 进行中
-const FULFILLED = 1; // 成功
-const REJECTED = 2; // 失败
-````
-
-
-
 #### 基础使用
 
 ````typescript
@@ -68,6 +54,16 @@ Promise的状态切换，pending => fulfilled 或 pending => rejected，状态�
 
 
 
+
+## 实现
+
+由于Promise为状态机，我们需先定义状态
+
+````typescript
+const PENDING = 0; // 进行中
+const FULFILLED = 1; // 成功
+const REJECTED = 2; // 失败
+````
 
 
 
@@ -182,8 +178,77 @@ function Promise(fn) {
 - 无论promise是否被解析，该方法都可以被调用。
 
 ````typescript
-
+function Promise(fn){
+  ...
+  // 对不同状态进行不同处理
+  function handle(handler) {
+    if(state === PENDING) {
+      handlers.push(handler);
+    } else {
+      // 成功状态
+      if (state === FULFILLED && typeof handler.onFulfilled === 'function') {
+        handler.onFulfilled(value);
+      }
+      // 失败状态
+      if (state === REJECTED && typeof handler.onRejected === 'function') {
+        handler.onRejected(value);
+      }
+    }
+  }
+  
+  // 当Promise被resolved或rejected时，保证handlers将被通知
+  this.done = function (onFulfilled, onRejected) {
+    // 保证异步执行
+    setTimeout(function() {
+      handle({onFulfilled: onFulfilled, onRejected.onRejected});
+    }, 0);
+  }
+}
 ````
 
 
 
+##### then方法
+
+````typescript
+function Promise(fn){
+  ...
+  this.then = function(onFulfilled, onRejected) {
+    const _this = this;
+    return new Promise(function (resolve, reject){
+      _this.done(function(result){
+        // onFulfilled 需要设置返回
+        if (typeof onFulfilled === 'function') {
+          try {
+            return resolve(onFulfilled(result));
+          } catch (ex) {
+            return reject(ex);
+          }
+        } else {
+          return resolve(result);
+        }
+      },function (error) {
+        if (typeof onRejected === 'function') {
+          try {
+            return resolve(onRejected(result));
+          } catch (ex) {
+            return reject(ex);
+          }
+        } else {
+          return reject(error);
+        }
+      })
+    })
+  };
+  
+  // 对应的catch方法， 直接调用then处理异常
+  this.catch = function(errorHandle) {
+    return this.then(null, errorHandle)
+  }
+  
+}
+````
+
+
+
+以上为promise基本实现原理。
