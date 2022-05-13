@@ -18,9 +18,9 @@ url编码的规则：取决于html头部meta中charset的设定。
 
    使用javascript对URL进行编码来统一格式。主要是两个方法：**encodeURI** **/** **encodeURIComponent****。**
 
----**encodeURI**  **： 对整个url编码（除网页特殊字符），输出utf-8格式，在每个字节前加%，但不编码单引号。**
+**encodeURI**  **： 对整个url编码（除网页特殊字符），输出utf-8格式，在每个字节前加%，但不编码单引号。**
 
----**encodeURIComponent**  **： 编码范围更广，对url的组成部分进行个别编码（包括网页特殊字符），编码方式一致。**
+**encodeURIComponent**  **： 编码范围更广，对url的组成部分进行个别编码（包括网页特殊字符），编码方式一致。**
 
 
 
