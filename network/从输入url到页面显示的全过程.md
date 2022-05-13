@@ -36,7 +36,7 @@ url编码的规则：取决于html头部meta中charset的设定。
 
   总结：通过 DNS 来查询 IP 地址 • DNS 先查本地、后查运营商、逐级网上查。（域名解析是从后往前查的）
 
----html头部写入dns缓存地址优化。
+html头部写入dns缓存地址优化。
 
 ````javascript
 <meta http-equiv="x-dns-prefetch-control" content="on" />
