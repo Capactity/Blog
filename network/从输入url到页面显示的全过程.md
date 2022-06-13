@@ -157,7 +157,9 @@ tcp/ip传输控制协议将应用层、表示层、会话层合并为应用层�
 
 ### 4.1 构建DOM树
 
-从上到下解析HTML文档生成DOM节点树（DOM tree）,也叫内容树（content tree）。
+从上到下解析HTML文档生成DOM节点树（DOM tree）,也叫内容树（content tree）。具体过程如下：
+
+1. 首先，
 
 
 
