@@ -74,12 +74,17 @@
 
 ### canvas
 [Canvas_API](https://github.com/Capactity/blog/blob/master/Canvas_API.md)
+
 ### d3
 ### 可视化问题汇总
+
+[根据鼠标位置缩放图形]
+
+[canvas拖拽图形]
+
 [局部渲染实现方案]
 
 [canvas获取点击选中节点最优算法]
 
 [性能优化注意点]
-
 
