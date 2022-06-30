@@ -68,7 +68,7 @@
 
 ### 可视化问题汇总
 
-[根据鼠标位置缩放图形]
+[根据鼠标位置缩放图形](https://github.com/Capactity/blog/blob/master/canvas/鼠标位置缩放图形.md)
 
 [canvas 拖拽图形]
 
