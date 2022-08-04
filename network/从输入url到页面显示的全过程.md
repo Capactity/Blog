@@ -145,9 +145,15 @@ tcp/ip传输控制协议将应用层、表示层、会话层合并为应用层�
 
 ### 4.1 构建DOM树
 
-从上到下解析HTML文档生成DOM节点树（DOM tree）,也叫内容树（content tree）。具体过程如下：
+从上到下解析HTML文档生成DOM节点树（DOM tree）,也叫内容树（content tree），最关键的是建立起每个节点的父子兄弟关系，即成员指针的指向。
 
-1. 首先，解析服务端返回的字符串，生成Token，标记当前是起始节点和终止节点（对应`startTag html`和`endTag html`），
+具体过程如下：
+
+1. 首先，解析服务端返回的字符串，生成`Tokens`，一个`Token`就是一个标签文本的序列化，标记当前是`起始节点`和`终止节点`（对应`startTag html`和`endTag html`），如果Token标记的是`起始节点`即创建节点对象，如果是`终止节点`，则不创建。
+2. 通过Token创建节点对象，同时确定节点的层级关系。（如：[ `startTag-html startTag-body endTag-body endTag-html` ]，这种结构表明了其`html`节点是`body`节点的父节点）。
+3. 构建DOM。如果遇到图片之类的标签，会加载图片资源。
+
+注意：构建DOM的过程中，不是等所有`Token`都转换完成后再去生成节点对象，而是一边生成Token一边消耗Token来生成节点对象。
 
 
 
