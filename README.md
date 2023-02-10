@@ -23,6 +23,7 @@
 ## 前端框架
 
 - [前端路由实现方式](https://github.com/Capactity/Blog/blob/main/frontend/前端路由实现方式.md)
+- [React](https://github.com/Capactity/Blog/blob/main/frontend/react.md)
 
 ## 打包工具
 
@@ -79,9 +80,7 @@
 
 [canvas 获取点击选中节点最优算法]
 
-[性能优化注意点](https://zhuanlan.zhihu.com/p/452871005) 
+[性能优化注意点](https://zhuanlan.zhihu.com/p/452871005)
 
-11.减少canvas指令的调用可以提高性能，减少状态机的更新一样可以的，比如绘制1000个点，假设1000个点有10中颜色，可以根据颜色对图形进行分组，减少fillStyle等状态的变更（先把同一种颜色的绘制完，接着另一种颜色绘制），而不是每次都去改变fillStyle,当然其他的状态(strokeStyle等)也是一样的
-2.坐标可以取整，浮点坐标会导致canvas进行抗锯齿处理
-3.clip最好少用，clip是个很昂贵的操作，局部渲染用bbox擦除和重绘即可
-
+11.减少 canvas 指令的调用可以提高性能，减少状态机的更新一样可以的，比如绘制 1000 个点，假设 1000 个点有 10 中颜色，可以根据颜色对图形进行分组，减少 fillStyle 等状态的变更（先把同一种颜色的绘制完，接着另一种颜色绘制），而不是每次都去改变 fillStyle,当然其他的状态(strokeStyle 等)也是一样的 2.坐标可以取整，浮点坐标会导致 canvas 进行抗锯齿处理
+3.clip 最好少用，clip 是个很昂贵的操作，局部渲染用 bbox 擦除和重绘即可
