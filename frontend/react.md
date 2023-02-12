@@ -120,11 +120,36 @@ export default App;
 
 **挂载：**
 
-- constructor 进行state和props的初始化
+- **constructor** 进行state和props的初始化
 - render
-- componentDidMount 第一次渲染后调用，可以访问DOM进行异步请求和定时器、消息订阅。
+- **componentDidMount** 第一次渲染后调用，可以访问DOM进行异步请求和定时器、消息订阅。
 
 **更新：**
 
-- 
+- 组件的state或props变化时触发更新
+- **shouldComponentUpdate**返回布尔值，默认为true。设置true / false确认是否更新组件，提高性能。
+- render
+- **componentDidUpdate** 在组件更新后调用
+
+**卸载：**
+
+- **componentWillUnMount** 组件从DOM中被移除时调用
+
+**错误捕获：**
+
+- **componentDidCatch**
+
+
+
+## React事件机制
+
+React基于浏览器实现的事件机制，包含**事件触发**、**事件冒泡**、**事件捕获**、**事件合成**和**事件派发**。
+
+#### react事件机制和原生DOM事件流有什么区别？
+
+虽然合成事件不是原生DOM事件，但它包含了原生DOM事件的引用，可以通过e.nativeEvent访问。
+
+
+
+
 
