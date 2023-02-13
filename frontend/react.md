@@ -177,14 +177,14 @@ React 基于浏览器实现的事件机制，包含**事件触发**、**事件�
 
 ## React hooks
 
-优点：
+**优点：**
 
 - 告别难以理解的class组件
 - 解决业务逻辑难以拆分的问题
 - 使状态逻辑复用变得简单可行
 - 函数组件的设计理念更符合React规范
 
-局限性：
+**局限性：**
 
 - hooks不能完整的为函数组件提供类组件的能力
 - 函数组件要求行更高
@@ -226,5 +226,43 @@ Fiber是链表结构，有三个指针，分别记录当前节点的下一个兄
 
 #### **Fiber更新机制**
 
+**初始化：**
 
+1. 创建FiberRoot（React根元素）和rootFiber（通过ReactDOM.render 或 ReactDOM.createRoot创建出来）
+2. 进入beginWork
+
+**workInProgress**: 正在内存中构建的Fiber树，第一次更新时，所有的更新都发生在workInProgress树中，第一次更新后，workInProgress树的状态是最新状态，它会替换current树。
+
+**current**:正在视图层渲染的树叫current Fiber树
+
+```
+currentFiber.alternate = workInProgressFiber
+workInProgressFiber.alternate = currentFiber
+```
+
+3. 深度调和子节点，渲染视图
+
+在新建的alternate树上，完成整个子节点的遍历，包括Fiber的创建，最后会以workInProgress树为最新的渲染树，FiberRoot的current指针指向workInProgress使其变成current Fiber，完成初始化流程。
+
+**更新：**
+
+重新创建虚拟DOM树（workInProgress树），复用当前视图层上的alternate属性，作为新的workInProgress。
+
+
+
+#### 双缓冲模式
+
+React的current树和workInProgress树使用双缓冲模式，可以减少Fiber节点的开销，减少性能损耗。
+
+
+
+#### React渲染流程
+
+如图，React用JSX描述页面，经过babel编译为render function，执行后产生VDOM，VDOM不是直接渲染的，会先转换为Fiber，再进行渲染。vdom转换为Fiber的过程叫reconcile，转换过程会创建DOM，全部转换完成后会一次性commit到DOM,这个过程不是一次性的，是可打断的。
+
+<img src="../img/react渲染流程.png" alt="react渲染流程"  />
+
+vdom（React Element对象）中只记录子节点，不记录兄弟节点，因此渲染不可打断
+
+Fiber（FiberNode对象）是一个链表，它记录了父节点、兄弟节点、子节点，因此是可以打断的
 
