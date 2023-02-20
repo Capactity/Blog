@@ -56,6 +56,7 @@
 - [双指针]
 - [栈与队列]
 - [二叉树]
+- [动态规划](https://github.com/Capactity/blog/blob/master/algorithm/动态规划/index.md)
 - [刷题心得](https://github.com/sisterAn/JavaScript-Algorithms)
 
 ## 前端综合
