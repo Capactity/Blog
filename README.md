@@ -27,7 +27,7 @@
 
 ## 打包工具
 
-- Webpack 配置过程
+- [Webpack 配置过程]((https://github.com/Capactity/Blog/blob/main/bundle-tool/webpack配置过程.md))
 - Webpack 构建和性能优化探索
 - vite 原理分析
 
