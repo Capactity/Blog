@@ -139,6 +139,10 @@ module.exports = {
 
 #### 1 编译模块（make）
 
+编译的流程如下：
+
+1. 根据entry对应的dependence创建对应文件类型的module对象，调用loader-runner仓库
+
 #### 2 完成模块编译
 
 ### 生成阶段
