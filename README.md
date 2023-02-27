@@ -24,7 +24,7 @@
 
 - [前端路由实现方式](https://github.com/Capactity/Blog/blob/main/frontend/前端路由实现方式.md)
 - [React](https://github.com/Capactity/Blog/blob/main/frontend/react.md)
-- [微前端实践](https://github.com/Capactity/Blog/blob/main/frontend/react.md)
+- [微前端实践](https://github.com/Capactity/Blog/blob/main/frontend/微前端.md)
 
 ## 打包工具
 
