@@ -9,7 +9,7 @@
 
 #### 子序列问题
 
-- 300.最长递增子序列
+- [300.最长递增子序列](https://github.com/Capactity/blog/blob/master/algorithm/动态规划/300-最长递增子序列.md)
 
 #### 背包问题
 
