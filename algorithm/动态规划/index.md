@@ -21,7 +21,7 @@
 
 其他
 
-- 接雨水
+- [接雨水](https://github.com/Capactity/blog/blob/master/algorithm/动态规划/42-接雨水.md)
 
 
 
