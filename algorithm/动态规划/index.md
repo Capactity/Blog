@@ -1,5 +1,15 @@
 ## 动态规划
 
+> 如果某一问题有很多重叠子问题，使用动态规划是最有效的。
+
+**动态规划问题，可以拆分为五步曲分析求解**
+
+1. 确定dp数组（dp table）以及下标的含义
+2. 确定递推公式
+3. dp数组如何初始化
+4. 确定遍历顺序
+5. 举例推导dp数组
+
 #### 基础题
 
 - [509.斐波那契数（简单）](https://github.com/Capactity/blog/blob/master/algorithm/动态规划/509-斐波那契数.md)
@@ -19,7 +29,7 @@
 
 - [121.买卖股票的最佳时机(简单)](https://github.com/Capactity/blog/blob/master/algorithm/动态规划/322-零钱兑换.md)
 
-其他
+#### 其他
 
 - [接雨水(困难)](https://github.com/Capactity/blog/blob/master/algorithm/动态规划/42-接雨水.md)
 
