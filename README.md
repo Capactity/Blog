@@ -54,11 +54,11 @@
 - [数组](https://github.com/Capactity/blog/blob/master/algorithm/array/array.md)
 - [链表]
 - [哈希表]
-
 - [字符串]
 - [双指针]
 - [栈与队列]
 - [二叉树]
+- [贪心算法](https://github.com/Capactity/blog/blob/master/algorithm/贪心算法/index.md)
 - [动态规划](https://github.com/Capactity/blog/blob/master/algorithm/动态规划/index.md)
 - [刷题心得](https://github.com/sisterAn/JavaScript-Algorithms)
 
