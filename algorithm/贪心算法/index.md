@@ -14,6 +14,6 @@
 #### 基础题
 
 - [455.分发饼干（简单）](https://github.com/Capactity/blog/blob/master/algorithm/贪心算法/455-分发饼干.md)
-- [122.买卖股票的最佳时机II（中等）](https://github.com/Capactity/blog/blob/master/algorithm/动态规划/70-爬楼梯.md)
-- [55.跳跃游戏（中等）](https://github.com/Capactity/blog/blob/master/algorithm/动态规划/746-最小花费爬楼梯.md)
+- [122.买卖股票的最佳时机II（中等）](https://github.com/Capactity/blog/blob/master/algorithm/贪心算法/122-买卖股票的最佳时机II.md)
+- [55.跳跃游戏（中等）](https://github.com/Capactity/blog/blob/master/algorithm/贪心算法/55-跳跃游戏.md)
 
