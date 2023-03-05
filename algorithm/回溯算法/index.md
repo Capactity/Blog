@@ -26,8 +26,8 @@ void backtracking(参数) {
 #### 组合问题
 
 - [77.组合(中等)](https://github.com/Capactity/blog/blob/master/algorithm/回溯算法/77-组合.md)
-- 216.组合综合II
-- 40.组合总和III
+- [216.组合总和III(中等)](https://github.com/Capactity/blog/blob/master/algorithm/回溯算法/216-组合总和.md)
+- [40.组合总和II](https://github.com/Capactity/blog/blob/master/algorithm/回溯算法/40-组合总和.md)
 - 17.电话号码的字母组合
 
 #### **排列问题**
