@@ -36,7 +36,7 @@ void backtracking(参数) {
 
 #### 分割问题
 
-- 131.分割回文串
+- [131.分割回文串](https://github.com/Capactity/blog/blob/master/algorithm/回溯算法/131-分割回文串.md)
 - 93.复原IP地址
 - 139单词拆分
 
