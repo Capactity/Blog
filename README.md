@@ -52,13 +52,13 @@
 
 ### 算法
 
-- [数组](https://github.com/Capactity/blog/blob/master/algorithm/array/array.md)
-- [链表]
-- [哈希表]
-- [字符串]
-- [双指针]
-- [栈与队列]
-- [二叉树]
+- [数组专题](https://github.com/Capactity/blog/blob/master/algorithm/array/array.md)
+- [链表专题]
+- [哈希表专题]
+- [字符串专题]
+- [双指针专题]
+- [栈与队列专题]
+- [二叉树专题](https://github.com/Capactity/blog/blob/master/algorithm/二叉树/index.md)
 - [回溯算法](https://github.com/Capactity/blog/blob/master/algorithm/回溯算法/index.md)
 - [贪心算法](https://github.com/Capactity/blog/blob/master/algorithm/贪心算法/index.md)
 - [动态规划](https://github.com/Capactity/blog/blob/master/algorithm/动态规划/index.md)
