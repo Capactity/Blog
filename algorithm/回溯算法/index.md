@@ -27,7 +27,7 @@ void backtracking(参数) {
 
 - [77.组合(中等)](https://github.com/Capactity/blog/blob/master/algorithm/回溯算法/77-组合.md)
 - [216.组合总和III(中等)](https://github.com/Capactity/blog/blob/master/algorithm/回溯算法/216-组合总和.md)
-- [40.组合总和II](https://github.com/Capactity/blog/blob/master/algorithm/回溯算法/40-组合总和.md)
+- [40.组合总和II(中等)](https://github.com/Capactity/blog/blob/master/algorithm/回溯算法/40-组合总和.md)
 - 17.电话号码的字母组合
 
 #### **排列问题**
@@ -36,13 +36,13 @@ void backtracking(参数) {
 
 #### 分割问题
 
-- [131.分割回文串](https://github.com/Capactity/blog/blob/master/algorithm/回溯算法/131-分割回文串.md)
+- [131.分割回文串(中等)](https://github.com/Capactity/blog/blob/master/algorithm/回溯算法/131-分割回文串.md)
 - 93.复原IP地址
 - 139单词拆分
 
 #### 棋盘问题
 
-- 51.N皇后
+- [51.N皇后(困难)](https://github.com/Capactity/blog/blob/master/algorithm/回溯算法/51-N皇后.md)
 
 #### 其他
 
