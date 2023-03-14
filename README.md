@@ -54,7 +54,7 @@
 
 - [数组专题](https://github.com/Capactity/blog/blob/master/algorithm/array/array.md)
 - [链表专题]
-- [哈希表专题]
+- [哈希表专题](https://github.com/Capactity/blog/blob/master/algorithm/哈希表/index.md)
 - [字符串专题]
 - [双指针专题]
 - [栈与队列专题]
