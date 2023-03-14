@@ -12,7 +12,7 @@
 
 ### 相关题目
 
-1.两数之和(简单)
+[1.两数之和(简单)](https://github.com/Capactity/blog/blob/master/algorithm/哈希表/1-两数之和.md)
 
 3.无重复字符的最长子串(中等)
 
