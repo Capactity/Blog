@@ -87,6 +87,8 @@
 
 [canvas 拖拽图形]
 
+[bbox 包围盒算法](https://github.com/Capactity/blog/blob/master/canvas/包围盒算法.md)
+
 [局部渲染实现方案]
 
 > - clip() 确定绘制的的裁剪区域，区域之外的图形不能绘制，详情查看 [CanvasRenderingContext2D.clip()](https://link.juejin.cn?target=https%3A%2F%2Fdeveloper.mozilla.org%2Fen-US%2Fdocs%2FWeb%2FAPI%2FCanvasRenderingContext2D%2Fclip)
