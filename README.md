@@ -68,6 +68,7 @@
 
 - [浏览器工作原理]
 - [微前端](https://github.com/Capactity/blog/blob/master/微前端/index.md)
+- [webpack基础](https://github.com/Capactity/blog/blob/master/webpack基础/index.md)
 
 ## 可视化基础
 
