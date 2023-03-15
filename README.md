@@ -67,10 +67,12 @@
 ## 前端综合
 
 - [浏览器工作原理]
+- [微前端](https://github.com/Capactity/blog/blob/master/微前端/index.md)
 
 ## 可视化基础
 
 - [图形学基础](https://juejin.cn/post/6912086785405386765#comment)
+- [Three.js基础](https://github.com/Capactity/blog/blob/master/可视化/threejs.md)
 
 ### canvas
 
@@ -85,6 +87,20 @@
 [canvas 拖拽图形]
 
 [局部渲染实现方案]
+
+> - clip() 确定绘制的的裁剪区域，区域之外的图形不能绘制，详情查看 [CanvasRenderingContext2D.clip()](https://link.juejin.cn?target=https%3A%2F%2Fdeveloper.mozilla.org%2Fen-US%2Fdocs%2FWeb%2FAPI%2FCanvasRenderingContext2D%2Fclip)
+> - clearRect(*x*, *y*, *width*, *height*) 擦除指定矩形内的颜色，查看 [CanvasRenderingContext2D.clearRect()](https://link.juejin.cn?target=https%3A%2F%2Fdeveloper.mozilla.org%2Fen-US%2Fdocs%2FWeb%2FAPI%2FCanvasRenderingContext2D%2FclearRect)
+
+通过API可得到局部刷新方案：
+
+1. 清除指定区域的颜色，并设置 clip
+2. 所有同这个区域相交的图形重新绘制
+
+1 bbox擦除后重绘  
+
+2 clip重绘有明显的性能问题
+
+
 
 > canvas 渲染较大画布的时候性能会较低？为什么？
 

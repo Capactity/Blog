@@ -14,9 +14,9 @@
 
 [1.两数之和(简单)](https://github.com/Capactity/blog/blob/master/algorithm/哈希表/1-两数之和.md)
 
-3.无重复字符的最长子串(中等)
+[3.无重复字符的最长子串(中等)](https://github.com/Capactity/blog/blob/master/algorithm/哈希表/3-无重复字符的最长子串.md)
 
-17.电话号码的字母组合(中等)
+[17.电话号码的字母组合(中等)](https://github.com/Capactity/blog/blob/master/algorithm/哈希表/17-电话号码的字母组合.md)
 
 128.最长连续序列(中等)
 
