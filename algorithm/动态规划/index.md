@@ -24,6 +24,7 @@
 #### 背包问题
 
 - [322.零钱兑换(中等)](https://github.com/Capactity/blog/blob/master/algorithm/动态规划/322-零钱兑换.md)
+- [139.单词拆分(中等)](https://github.com/Capactity/blog/blob/master/algorithm/动态规划/139-单词拆分.md)
 
 #### 股票买卖问题
 
