@@ -18,7 +18,7 @@
 
 [17.电话号码的字母组合(中等)](https://github.com/Capactity/blog/blob/master/algorithm/哈希表/17-电话号码的字母组合.md)
 
-128.最长连续序列(中等)
+[128.最长连续序列(中等)](https://github.com/Capactity/blog/blob/master/algorithm/哈希表/128-最长连续序列.md)
 
 139.单词拆分(中等)
 

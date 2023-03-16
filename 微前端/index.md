@@ -4,7 +4,7 @@ monorepo 模式目前也用得越来越多，我个人也很喜欢这种模式�
 
 在 monorepo 模式中，无论是 lerna 还是 yarn 工作机制的核心都是：
 
-- 将所有 package 的依赖都尽量以 flat 模式安装到根级别的 node_modules 里，即 hoist，以避免各个 package 重复安装第三方依赖；将有冲突的依赖，安装在各自 package 的 node_modules 里，以解决依赖的版本冲突问题。
+- 将所有 package 的依赖都尽量以 flat 模式安装到根级别的 node_modules 里，即 host，以避免各个 package 重复安装第三方依赖；将有冲突的依赖，安装在各自 package 的 node_modules 里，以解决依赖的版本冲突问题。
 - 将各个 package 都软链到根级别的 node_modules 里，这样各个 package 利用 Node 的递归查找机制，可以导入其他 package，不需要自己进行手动的 link。
 - 将各个 package 里 node_modules 的 bin 软链到 root level 的 node_modules 里，保证每个 package 的 npm script 能正常运行。
 
