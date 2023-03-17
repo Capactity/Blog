@@ -1,9 +1,42 @@
----
-title: Canvas API
-date: 2020-10-12 15:03:59
-tags:
-- canvas
----
+## canvas性能优化方向
+
+https://juejin.cn/post/7135229172409958431
+
+
+
+
+
+
+
+
+
+## canvas API
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
