@@ -6,8 +6,6 @@
 
 
 
-
-
 ## 策略模式
 
 **概念：** 定义一系列的算法，把它们一个个封装起来，并且使它们可以互相转换。
@@ -94,10 +92,6 @@ var validataFunc = function(){
 
 
 
-
-
-
-
 ## 观察者模式（发布-订阅模式 ）
 
 **概念：** 一种消息范式，定义对象间的一种一对多的依赖关系，当一个对象的状态发生改变时，所有依赖于它的对象都将得到通知。
@@ -174,10 +168,6 @@ emitter.on('test', function(a1, a2) {
 emitter.emit('test', 'augument1', 'argument2')
 emitter.emit('test', 'augument3', 'argument4')
 ````
-
-
-
-
 
 
 
