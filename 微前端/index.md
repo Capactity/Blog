@@ -85,6 +85,57 @@ packages:
 
 ![img](https://pic4.zhimg.com/80/v2-54f479648cb64932eb0d5d449cec714f_1440w.webp)
 
+#### Qiankun的优势
+
+- **基于 [single-spa](https://link.juejin.cn?target=https%3A%2F%2Fgithub.com%2FCanopyTax%2Fsingle-spa)** 封装，提供了更加开箱即用的 API。
+- **技术栈无关**，任意技术栈的应用均可 使用/接入，不论是 React/Vue/Angular/JQuery 还是其他等框架。
+- **HTML Entry 接入方式**，让你接入微应用像使用 iframe 一样简单。
+- **样式隔离**，确保微应用之间样式互相不干扰。
+- **JS 沙箱**，确保微应用之间 全局变量/事件 不冲突。
+- **资源预加载**，在浏览器空闲时间预加载未打开的微应用资源，加速微应用打开速度。
+
+### Micro-app
+
+`micro-app`并没有沿袭`single-spa`的思路，而是借鉴了WebComponent的思想，通过CustomElement结合自定义的ShadowDom，将微前端封装成一个类WebComponent组件，从而实现微前端的组件化渲染。并且由于自定义ShadowDom的隔离特性，`micro-app`不需要像`single-spa`和`qiankun`一样要求子应用修改渲染逻辑并暴露出方法，也不需要修改webpack配置，是目前市面上接入微前端成本最低的方案。
+
+
+
+`micro-app`会向子应用注入名称为`microApp`的全局对象，子应用通过这个对象和基座应用进行数据交互。
+
+addDataListener
+
+```js
+/**
+ * 绑定监听函数，监听函数只有在数据变化时才会触发
+ * dataListener: 绑定函数
+ * autoTrigger: 在初次绑定监听函数时如果有缓存数据，是否需要主动触发一次，默认为false
+ * !!!重要说明: 因为子应用是异步渲染的，而基座发送数据是同步的，
+ * 如果在子应用渲染结束前基座应用发送数据，则在绑定监听函数前数据已经发送，在初始化后不会触发绑定函数，
+ * 但这个数据会放入缓存中，此时可以设置autoTrigger为true主动触发一次监听函数来获取数据。
+ */
+window.microApp.addDataListener(dataListener: Function, autoTrigger?: boolean)
+// 解绑监听函数
+window.microApp.removeDataListener(dataListener: Function)
+// 清空当前子应用的所有绑定函数(全局数据函数除外)
+window.microApp.clearDataListener()
+
+// dispatch只接受对象作为参数
+window.microApp.dispatch({type: '子应用发送的数据'}) // 子应用向基座发送数据
+
+基座向子应用发送数据方式：
+方式1: 通过data属性发送数据   在React中我们需要引入一个polyfill（jsxCustomEvent）
+方式2: 手动发送数据  microApp.setData
+
+全局数据通信会向基座应用和所有子应用发送数据，在跨应用通信的场景中适用。
+microApp.setGlobalData({type: '全局数据'})
+```
+
+
+
+http://cangdu.org/micro-app/docs.html#/zh-cn/data
+
+
+
 ## 微前端如何进行安全隔离？
 
 微前端中的安全隔离分为样式隔离和脚本隔离；如果使用了全局样式那么主应用与子应用之间可能产生样式污染；js脚本则主要是全局变量的污染；
