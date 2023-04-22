@@ -24,6 +24,7 @@
 
 - [前端路由实现方式](https://github.com/Capactity/Blog/blob/main/frontend/前端路由实现方式.md)
 - [React](https://github.com/Capactity/Blog/blob/main/frontend/react.md)
+- Vue
 - [基于 qiankun 的微前端最佳实践](https://juejin.cn/post/6844904151231496200)
 - [微前端实践](https://github.com/Capactity/Blog/blob/main/frontend/微前端.md)
 
