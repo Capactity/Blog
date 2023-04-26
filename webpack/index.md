@@ -38,6 +38,8 @@ Vite/Rollup 的模块**会经过所有的插件**，在插件中过滤出需要�
 
 1. 不支持非现代浏览器
 
+   
+
 #### webpack如何优化前端性能
 
 - 压缩代码:删除多余的代码、注释、简化代码的写法等等方式。可以利用webpack的`UglifyJsPlugin`和`ParallelUglifyPlugin`来压缩JS文件， 利用`cssnano`（css-loader?minimize）来压缩css
@@ -212,6 +214,12 @@ HMR的核心就是客户端从服务端拉去更新后的文件，准确的说�
 打包成唯一脚本：一把梭完自己爽，服务器压力小，但是页面空白期长，用户体验不好。
 
 
+
+#### Loader和Plugin的区别
+
+Loader 就像是一个翻译官，每个 loader 可以把源资源转换成新的结果输出并传递给下一个 loader ，但是最后一个 Loader 必须返回 JavaScript 
+
+plugin是运行在webpak打包过程中的某段逻辑，它主要的作用是根据webpack提供的一些hooks来进行一些额外的操作，使 webpack 更加灵活扩展。
 
 
 
