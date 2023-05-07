@@ -366,6 +366,16 @@ useState 的 mountState 阶段返回的 setXxx 是绑定了几个参数的 dispa
 
 
 
+#### `useMemo` 和 `useCallback`区别
+
+`useMemo` 和 `useCallback` 都是用于性能优化的 React Hook，它们的作用有所不同。
+
+`useMemo` 用于缓存计算结果，避免重复计算。它接受两个参数：第一个参数是需要缓存的函数，第二个参数是依赖项数组。当依赖项数组中的任何一个值发生变化时，`useMemo` 会重新计算函数并返回新的结果；否则，`useMemo` 会返回上一次计算得到的结果。
+
+`useCallback` 用于缓存函数实例，避免在每次重新渲染组件时创建新的函数。它也接受两个参数：第一个参数是需要缓存的函数，第二个参数是依赖项数组。当依赖项数组中的任何一个值发生变化时，`useCallback` 会创建一个新的函数实例；否则，`useCallback` 会返回上一次创建的函数实例。
+
+虽然两者的作用类似，但它们的应用场景不同。`useMemo` 适用于需要进行大量计算的场景，如处理复杂的数据结构、执行复杂的算法等；而 `useCallback` 适用于需要传递给子组件的函数，避免在每次父组件重新渲染时创建新的函数实例。
+
 
 
 ## Fiber架构
@@ -377,6 +387,16 @@ useState 的 mountState 阶段返回的 setXxx 是绑定了几个参数的 dispa
 故引入了Fiber，**React Fiber就是虚拟DOM，他是一个链表，返回return、children、siblings**，分别代表父Fiber，子Fiber和兄弟Fiber。
 
 **Fiber是纤程，比线程更精细，表示对渲染线程实现更精细的控制，具备可中断、可恢复的特性。**
+
+
+
+Fiber 架构通过将 React 应用拆分成一个个独立的单元（fiber），使得 React 应用可以被切片处理，这样就实现了对渲染进程的分割管理，同时也支持了在渲染过程中的中断和恢复。
+
+Fiber 架构的核心是 Fiber 数据结构，每个 Fiber 实例都表示了应用中的一个组件或 DOM 节点。Fiber 节点包含了该节点的状态和生命周期方法，并且还能够记录子节点、兄弟节点等信息，这些信息都被保存在 Fiber 树中。
+
+Fiber 架构采用了一种双缓存技术，通过使用两棵 Fiber 树来实现渲染过程的交替进行。在更新过程中，React 会先创建一颗新的 Fiber 树，并在树上标记需要更新的节点。然后 React 使用这颗新的 Fiber 树来计算出需要更新哪些 DOM 节点，并将这些更新同步到浏览器中。
+
+为了实现渐进式渲染和对用户输入的响应，Fiber 架构引入了优先级的概念。React 将更新分为不同的优先级，每个优先级对应着一种任务类型和时间限制。在高优先级任务到来时，React 会中断当前渲染任务，处理高优先级任务，并在恰当的时候返回到之前的任务上继续执行。
 
 #### 应用目的
 
@@ -390,27 +410,9 @@ Fiber是链表结构，有三个指针，分别记录当前节点的下一个兄
 
 #### **Fiber更新机制**
 
-**初始化：**
-
-1. 创建FiberRoot（React根元素）和rootFiber（通过ReactDOM.render 或 ReactDOM.createRoot创建出来）
-2. 进入beginWork
-
-**workInProgress**: 正在内存中构建的Fiber树，第一次更新时，所有的更新都发生在workInProgress树中，第一次更新后，workInProgress树的状态是最新状态，它会替换current树。
-
-**current**:正在视图层渲染的树叫current Fiber树
-
-```
-currentFiber.alternate = workInProgressFiber
-workInProgressFiber.alternate = currentFiber
-```
-
-3. 深度调和子节点，渲染视图
+基于协调算法、Fiber 数据结构、双缓存技术和优先级控制等多种新特性，实现了更加灵活、可中断和高效的更新过程。
 
 在新建的alternate树上，完成整个子节点的遍历，包括Fiber的创建，最后会以workInProgress树为最新的渲染树，FiberRoot的current指针指向workInProgress使其变成current Fiber，完成初始化流程。
-
-**更新：**
-
-重新创建虚拟DOM树（workInProgress树），复用当前视图层上的alternate属性，作为新的workInProgress。
 
 
 
@@ -424,9 +426,39 @@ React的current树和workInProgress树使用双缓冲模式，可以减少Fiber�
 
 如图，React用JSX描述页面，经过babel编译为render function，执行后产生VDOM，VDOM不是直接渲染的，会先转换为Fiber，再进行渲染。vdom转换为Fiber的过程叫reconcile，转换过程会创建DOM，全部转换完成后会一次性commit到DOM,这个过程不是一次性的，是可打断的。
 
-<img src="../img/react渲染流程.png" alt="react渲染流程"  />
+React 的渲染流程可以概括为以下几个步骤：
 
-vdom（React Element对象）中只记录子节点，不记录兄弟节点，因此渲染不可打断
+1. 构建组件树
 
-Fiber（FiberNode对象）是一个链表，它记录了父节点、兄弟节点、子节点，因此是可以打断的
+React 应用由多个组件构成，每个组件都有自己的状态和属性（props）。在渲染过程中，首先需要构建组件树，也就是创建每个组件的实例，并将它们按照层次结构连接起来，形成完整的组件树。
+
+1. 计算组件更新
+
+一旦组件树构建完成，React 会通过 diff 算法比较前后两次渲染的组件树，以确定哪些组件需要进行更新。对于需要更新的组件，React 会调用它的生命周期方法和 setState 方法，计算出它的新状态和属性值，并将这些值保存到组件实例中。
+
+1. 生成 Virtual DOM
+
+在计算出每个组件的最新状态和属性后，React 会使用这些值生成一个虚拟 DOM 树，也就是 Virtual DOM。Virtual DOM 是 React 自己实现的一种轻量级的文档对象模型，它与浏览器的 DOM 类似，但是更加高效，并且能够方便地进行 diff 操作。
+
+1. Diff 算法优化
+
+React 通过 diff 算法比较前后两次渲染的 Virtual DOM，找出需要更新的部分，并尽可能地复用已经存在的 DOM 节点，从而减少 DOM 操作的次数，提高渲染效率。React 会使用一些优化策略，例如键（key）检查、分层比较等，以尽可能地加速 diff 过程。
+
+1. 渲染到真实 DOM
+
+最后，React 将更新后的 Virtual DOM 渲染到浏览器中，并对需要更新的 DOM 节点进行操作。在渲染过程中，React 会使用一些技巧，例如批量更新、异步渲染等，以提高性能并保持用户界面的响应性。
+
+
+
+#### react的diff算法
+
+React 的 diff 算法是为了在组件树发生变化时，尽可能地减少 DOM 操作的次数，并且保持高性能和响应性。它是 React 中最核心的算法之一，也是其高效渲染的关键所在。
+
+React 的 diff 算法会对比前后两次渲染的 Virtual DOM 树，找出需要更新的部分，并尽可能地复用已存在的节点，以减少 DOM 操作的次数。以下是 React diff 算法的基本规则：
+
+1. 同级比较：React 只会比较同层级的节点，不会跨层级进行比较。
+2. 不同类型的节点：如果前后两个节点的类型不同，React 会直接删除旧节点，并创建新节点并插入到相应位置。
+3. 相同类型的节点：如果前后两个节点的类型相同，则 React 会比较它们的属性和子节点，来判断是否需要更新该节点。
+4. 使用 key 进行优化：在比较子节点时，React 会使用子节点的 key 属性来帮助确定它们之间的对应关系。这样可以尽量减少删除、创建和移动节点的操作，提高算法效率。
+5. Diff 策略：在比较子节点时，React 会采用不同的 diff 策略，例如只向后遍历、逐层比较等，以尽可能地减少比较的次数。
 
