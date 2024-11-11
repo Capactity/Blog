@@ -8,7 +8,8 @@
 
 #### 排序
 
-- [数组排序（中等）](https://github.com/Capactity/blog/blob/master/algorithm/array/数组排序.md)
+- [159.数组排序（简单）](https://github.com/Capactity/blog/blob/master/algorithm/array/数组排序.md)
+- [88. 合并两个有序数组](https://github.com/kerwin-ly/Blog/blob/main/algorithm/array/88. 合并两个有序数组(简单).md)
 
 #### 二分查找
 
@@ -18,7 +19,7 @@
 
 #### 移除元素
 
-- 27.移除元素（简单）
+- [27.移除元素（简单）](https://github.com/Capactity/blog/blob/master/algorithm/array/27-移除元素.md)
 
 #### 有序数组的平方
 
@@ -26,7 +27,7 @@
 
 #### 长度最小的子数组
 
-- 209.长度最小的子数组（中等）
+- [209.长度最小的子数组（中等）](https://github.com/Capactity/blog/blob/master/algorithm/array/69-x的平方根.md)
 
 #### 螺旋矩阵
 
@@ -34,6 +35,5 @@
 
 #### 数组求和
 
-- 1.两数之和（简单）
 - 15.三数之和（中等）
 

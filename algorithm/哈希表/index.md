@@ -14,6 +14,10 @@
 
 [1.两数之和(简单)](https://github.com/Capactity/blog/blob/master/algorithm/哈希表/1-两数之和.md)
 
+[242.有效的字母异位词(简单)](https://github.com/Capactity/blog/blob/master/algorithm/哈希表/242-有效的字母异位词.md)
+
+[349.两个数组的交集(简单)](https://github.com/Capactity/blog/blob/master/algorithm/哈希表/349-两个数组的交集.md)
+
 [3.无重复字符的最长子串(中等)](https://github.com/Capactity/blog/blob/master/algorithm/哈希表/3-无重复字符的最长子串.md)
 
 [17.电话号码的字母组合(中等)](https://github.com/Capactity/blog/blob/master/algorithm/哈希表/17-电话号码的字母组合.md)
