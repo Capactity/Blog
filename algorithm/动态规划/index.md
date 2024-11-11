@@ -20,6 +20,7 @@
 #### 子序列问题
 
 - [300.最长递增子序列(中等)](https://github.com/Capactity/blog/blob/master/algorithm/动态规划/300-最长递增子序列.md)
+- [53.最大子数组和(中等)](https://github.com/Capactity/blog/blob/master/algorithm/动态规划/53-最大子数组和.md)
 
 #### 背包问题
 

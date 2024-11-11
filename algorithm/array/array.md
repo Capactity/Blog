@@ -9,7 +9,7 @@
 #### 排序
 
 - [159.数组排序（简单）](https://github.com/Capactity/blog/blob/master/algorithm/array/数组排序.md)
-- [88. 合并两个有序数组](https://github.com/kerwin-ly/Blog/blob/main/algorithm/array/88. 合并两个有序数组(简单).md)
+- [88. 合并两个有序数组](https://github.com/Capactity/blog/blob/master/algorithm/array/88-合并两个有序数组.md)
 
 #### 二分查找
 
