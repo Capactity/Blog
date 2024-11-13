@@ -23,7 +23,7 @@
 
 #### 有序数组的平方
 
-- 977.有序数组的平方（简单）
+- [977.有序数组的平方（简单）](https://github.com/Capactity/blog/blob/master/algorithm/array/977-有序数组的平方.md)
 
 #### 长度最小的子数组
 
@@ -31,7 +31,7 @@
 
 #### 螺旋矩阵
 
-- 螺旋矩阵II（中等）
+- [59.螺旋矩阵II（中等）](https://github.com/Capactity/blog/blob/master/algorithm/array/59-螺旋矩阵II.md)
 
 #### 数组求和
 
