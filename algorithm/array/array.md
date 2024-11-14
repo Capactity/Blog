@@ -17,15 +17,11 @@
 - [35.搜索插入位置（简单）](https://github.com/Capactity/blog/blob/master/algorithm/array/35-搜索插入位置.md)
 - [69.x的平方根（简单）](https://github.com/Capactity/blog/blob/master/algorithm/array/69-x的平方根.md)
 
-#### 移除元素
+#### 双指针/滑动窗口
 
 - [27.移除元素（简单）](https://github.com/Capactity/blog/blob/master/algorithm/array/27-移除元素.md)
 
-#### 有序数组的平方
-
 - [977.有序数组的平方（简单）](https://github.com/Capactity/blog/blob/master/algorithm/array/977-有序数组的平方.md)
-
-#### 长度最小的子数组
 
 - [209.长度最小的子数组（中等）](https://github.com/Capactity/blog/blob/master/algorithm/array/69-x的平方根.md)
 
