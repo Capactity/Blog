@@ -38,7 +38,10 @@
 
 [101.对称二叉树(简单)](https://github.com/Capactity/blog/blob/master/algorithm/二叉树/101-对称二叉树.md)
 
-104.二叉树的最大深度
+[226.翻转二叉树(简单)](https://github.com/Capactity/blog/blob/master/algorithm/二叉树/226-翻转二叉树.md)
+
+[104.二叉树的最大深度(简单)](https://github.com/Capactity/blog/blob/master/algorithm/二叉树/104-二叉树的最大深度.md)
+
 
 111.二叉树的最小深度
 
