@@ -42,12 +42,11 @@
 
 [104.二叉树的最大深度(简单)](https://github.com/Capactity/blog/blob/master/algorithm/二叉树/104-二叉树的最大深度.md)
 
-
-111.二叉树的最小深度
+[111.二叉树的最小深度](https://github.com/Capactity/blog/blob/master/algorithm/二叉树/111-二叉树的最小深度.md)
 
 #### 完全二叉树
 
-222.完全二叉树的节点个数
+[222.完全二叉树的节点个数](https://github.com/Capactity/blog/blob/master/algorithm/二叉树/111-二叉树的最小深度.md)
 
 110.平衡二叉树
 
