@@ -48,7 +48,7 @@
 
 [222.完全二叉树的节点个数](https://github.com/Capactity/blog/blob/master/algorithm/二叉树/111-二叉树的最小深度.md)
 
-110.平衡二叉树
+[110.平衡二叉树](https://github.com/Capactity/blog/blob/master/algorithm/二叉树/111-二叉树的最小深度.md)
 
 #### 路径问题（递归+回溯）
 
@@ -58,7 +58,7 @@
 
 404.左叶子之和
 
-112.路径总和
+[112.路径总和](https://github.com/Capactity/blog/blob/master/algorithm/二叉树/112-路径总和.md)
 
 #### 层序遍历
 
