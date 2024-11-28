@@ -52,7 +52,7 @@
 
 #### 路径问题（递归+回溯）
 
-257.二叉树的所有路径
+[257.二叉树的所有路径](https://github.com/Capactity/blog/blob/master/algorithm/二叉树/257-二叉树的所有路径.md)
 
 129.求根节点到叶子节点数字之和
 
