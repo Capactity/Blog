@@ -54,9 +54,9 @@
 
 [257.二叉树的所有路径](https://github.com/Capactity/blog/blob/master/algorithm/二叉树/257-二叉树的所有路径.md)
 
-129.求根节点到叶子节点数字之和
+[129.求根节点到叶子节点数字之和](https://github.com/Capactity/blog/blob/master/algorithm/二叉树/129-求根节点到叶子节点数字之和.md)
 
-404.左叶子之和
+[404.左叶子之和](https://github.com/Capactity/blog/blob/master/algorithm/二叉树/404-左叶子之和.md)
 
 [112.路径总和](https://github.com/Capactity/blog/blob/master/algorithm/二叉树/112-路径总和.md)
 
