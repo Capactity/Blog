@@ -66,11 +66,11 @@
 
 #### 修改与构建二叉树
 
-106.从中序与后序遍历序列构造二叉树
+[106.从中序与后序遍历序列构造二叉树](https://github.com/Capactity/blog/blob/master/algorithm/二叉树/106-从中序与后序遍历序列构造二叉树.md)
 
-226.翻转二叉树
+[226.翻转二叉树](https://github.com/Capactity/blog/blob/master/algorithm/二叉树/226-翻转二叉树.md)
 
-654.最大二叉树
+[654.最大二叉树](https://github.com/Capactity/blog/blob/master/algorithm/二叉树/654-最大二叉树.md)
 
 #### 二叉搜索树属性
 
