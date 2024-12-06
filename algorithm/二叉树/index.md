@@ -74,7 +74,7 @@
 
 #### 二叉搜索树属性
 
-700.二叉搜索树中的搜索
+[700.二叉搜索树中的搜索](https://github.com/Capactity/blog/blob/master/algorithm/二叉树/700-二叉搜索树中的搜索.md)
 
 98.验证二叉搜索树
 
