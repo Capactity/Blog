@@ -76,9 +76,9 @@
 
 [700.二叉搜索树中的搜索](https://github.com/Capactity/blog/blob/master/algorithm/二叉树/700-二叉搜索树中的搜索.md)
 
-98.验证二叉搜索树
+[98.验证二叉搜索树](https://github.com/Capactity/blog/blob/master/algorithm/二叉树/98-验证二叉搜索树.md)
 
-230.二叉搜索树中第K小的元素
+[230.二叉搜索树中第K小的元素](https://github.com/Capactity/blog/blob/master/algorithm/二叉树/230-二叉搜索树中第K小的元素.md)
 
 450.删除二叉搜索树中的节点
 
