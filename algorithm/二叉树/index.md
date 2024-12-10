@@ -80,5 +80,5 @@
 
 [230.二叉搜索树中第K小的元素](https://github.com/Capactity/blog/blob/master/algorithm/二叉树/230-二叉搜索树中第K小的元素.md)
 
-450.删除二叉搜索树中的节点
+[450.删除二叉搜索树中的节点](https://github.com/Capactity/blog/blob/master/algorithm/二叉树/450-删除二叉搜索树中的节点.md)
 
